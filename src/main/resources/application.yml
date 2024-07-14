@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: development
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/centraldb
+  server:
+    port: 8080
+app:
+  tenants:
+    - id: tenant1
+      name: tenant1
+      databaseUri: 127.0.0.1
+    - id: tenant2
+      name: tenant2
+      databaseUri: localhost
+jwt:
+  privateKey: sYjC3iUxb5u4y4XtJYpStU9+NWJyy68ARfja3NcxE10=
+
